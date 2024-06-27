@@ -1,0 +1,247 @@
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 200 to 1000 */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #3d4152;
+}
+.header-nav{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 80px;
+  box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
+  background: #fff;
+  z-index: 1000;
+}
+.global-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  column-gap: 283px;
+}
+.nav-left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+  height: 80px;
+}
+
+.nav-left .other-span{
+  border-bottom: 2px solid black;
+  font-weight: 700;
+  color: #3d4152;
+}
+.nav-left .other-span:hover{
+  border-bottom: 2px solid #fc8019;
+  color: #fc8019;
+}
+.nav-left-other-div{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-left .material-symbols-outlined{
+  color: #fc8019;
+}
+.nav-right ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+.nav-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+.nav-right .items{
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav-right-anchor{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+} 
+.nav-right-anchor:hover{
+  color: #ffa700;
+}
+.item-new-span{
+  position: absolute;
+  top: 0px;
+  right: -26px;
+  color: #ffa700;
+  font-size: 10px;
+}
+/* Main Section */
+
+.content-section{
+  position: relative;
+  top: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+.content-section .item-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.item-bar > .restaurant-numbers{
+  font-weight: 700;
+  font-size: 28px;
+  color: #3d4152;
+}
+.item-bar > .filtters{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  color: #686b78;
+  font-size: 16px;
+  cursor: pointer;
+}
+.restaurant-list{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  margin-bottom: 85px;
+  margin-top: 40px;
+}
+.restaurant-list .place-link{
+  background: #fff;
+}
+.restaurant-list .list-item{
+  padding: 25px;
+  border: 1px solid #fff;
+}
+.restaurant-list .list-item:hover{
+  border: 1px solid #d3d5df;
+  box-shadow: 0px 4px 7px 0px rgba(218 220 230 / 60%);
+}
+.item-content .top-img{
+  background: #eef0f5;
+  width: 254px;
+  height: 160px;
+}
+.top-img img{
+  opacity: 0.8;
+}
+.list-item:hover img{
+  opacity: 1;
+}
+
+.item-content{
+  position: relative;
+}
+.status{
+  position: absolute;
+  top: 0px;
+  left: -8px;
+  background-color: rgb(58, 60, 65);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 9px;
+  border-color: rgb(30, 32, 35) transparent;
+}
+.status::before{
+  position:absolute;
+  bottom: -9px;
+  left: 0;
+  content: '';
+  border-width: 9px 0 0 9px;
+  border-color: inherit;
+  border-style: solid;
+}
+.place-name-div{
+  margin-top: 14px;
+}
+.place-name-div .name {
+  font-size: 17px;
+  font-weight: 500;
+  /* to bring text in next line */
+  word-break: break-word;
+}
+.place-name-div .food-items {
+  color: #686b78;
+  font-size: 13px;
+  margin-top: 4px;
+  font-weight: 300;
+}
+.info-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #535665;
+}
+.info-div .rating{
+  display: flex;
+  align-items: center;
+  background-color: #21973B;
+  color: #fff;
+  height: 20px;
+  width: 45px;
+  padding: 0 5px;
+  font-weight: 400;
+}
+.icon-star{
+  font-size: 10px;
+  margin-right: 4px;
+}
+.offer-div{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e9e9eb;
+  padding-top: 14px;
+  margin-top: 14px;
+  color: #8a584b;
+  font-weight: 600;
+}
+.offer-fillerd-icon{
+  font-size: 16px;
+  width: 20px;
+  height: 16px;
+  margin-right: 4px;
+}
+.offer-div .offer-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.quick-view{
+  visibility: hidden;
+  border-top: 1px solid #e9e9eb;
+  padding-top: 14px;
+  margin-top: 14px;
+  text-align: center;
+}
+.list-item:hover .quick-view{
+  visibility: visible;
+}
+.view-btn{
+  color: #5d8ed5;
+  font-weight: 600;
+  text-transform: uppercase;
+}
